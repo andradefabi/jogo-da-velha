@@ -46,7 +46,7 @@ body {
 }
 
 .turn-x {
-  color: #FFEB3B; /* Amarelo para X */
+  color: rgb(214, 16, 16); /* vermelho para X */
 }
 
 .turn-o {
@@ -81,13 +81,13 @@ body {
 }
 
 .trivia-cell.x {
-  background-color: #FFEB3B; /* Amarelo para X */
+  background-color: #c00000; /* vermelho para X */
   color: #202124;
 }
 
 .trivia-cell.o {
-  background-color: #2196F3; /* Azul para O */
-  color: #fff;
+  background-color: #ffffff; /* branco para O */
+  color: #000000;
 }
 
 .modal {
@@ -103,7 +103,7 @@ body {
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 30px;
   text-align: center;
   border-radius: 25px;
