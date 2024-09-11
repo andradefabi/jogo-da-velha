@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #202124;
+  color: white;
+}
+
+#gameModeSelection {
+  margin-bottom: 20px;
+}
+
+.trivia-btn {
+  padding: 12px 25px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.trivia-btn:hover {
+  transform: scale(1.05);
+  background-color: #388E3C;
+}
+
+#turnIndicator {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  padding: 10px;
+  border-radius: 25px;
+  background-color: #3b3b3b;
+  text-align: center;
+}
+
+.turn-x {
+  color: #FFEB3B; /* Amarelo para X */
+}
+
+.turn-o {
+  color: #2196F3; /* Azul para O */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 15px;
+}
+
+.trivia-cell {
+  width: 120px;
+  height: 120px;
+  background-color: #292A2D;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.trivia-cell:hover {
+  background-color: #3c4043;
+  transform: scale(1.1);
+}
+
+.trivia-cell.x {
+  background-color: #FFEB3B; /* Amarelo para X */
+  color: #202124;
+}
+
+.trivia-cell.o {
+  background-color: #2196F3; /* Azul para O */
+  color: #fff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  border-radius: 25px;
+  color: #202124;
+}
+
+#winModal .trivia-btn {
+  background-color: #FF5722;
+}
+
+#winModal .trivia-btn:hover {
+  background-color: #E64A19;
+}
+
+button {
+  cursor: pointer;
+}
